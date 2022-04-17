@@ -27,78 +27,73 @@
         </label>
         <ol>
             <a href="#home"><li>Home</li></a>
-            <a href="#acercaMi"><li>Acerca de mí</li></a>
-            <a href=""><li>Mis habilidades</li></a>
-            <a href=""><li>Experiencia</li></a>
-            <a href=""><li>Mi portafolio</li></a>
-            <a href=""><li>Contacto</li></a>
+            <a href="#about"><li>Acerca de mí</li></a>
+            <a href="#skills"><li>Mis habilidades</li></a>
+            <a href="#exp"><li>Experiencia</li></a>
+            <a href="#portfolio"><li>Mi portafolio</li></a>
+            <a href="#contact"><li>Contacto</li></a>
         </ol>
     </nav>
 
     <header id="home">
-        
-        <img class="background" src="./assets/image/Estructura home mobile.png">
+        <div class="container">
+            <h1><span>Soy</span> John Forero</h1>
+            <p>Creo, diseño y desarrollo para darle el <br> valor a tu producto</p>
+            
+            <div class="info-exp">
+                <p>UI Designer <span>4 años</span></p>
+                <p>Frontend Dev <span>1 año</span></p>
+            </div>
 
-        <div class="title-head">
-            <ul>
-                <li>Soy</li>
-                <li>John Forero</li>
-            </ul>
+            <section class="redes">
+                <img src="./assets/image/linkedin.svg" alt="logo Linkedin">
+                <img src="./assets/image/bxl-github.svg" alt="Logo Github">
+                <img src="./assets/image/bxl-facebook.svg" alt="Logo Facebook">
+            </section>
         </div>
-
-        <p>Creo, diseño y desarrollo para darle el valor a tu producto</p>
-
-        <div class="info-exp">
-            <ul >
-                <li>UI Designer</li>
-                <li>4 años</li>
-            </ul>
-            <ul>
-                <li>Frontend Dev</li>
-                <li>1 año</li>
-            </ul>
-        </div>
-
     </header>
-    <div class="redes">
-        <a href=""><img src="./assets/image/logos anteriores/bxl-github.svg"></a>
-        <a href=""><img src="./assets/image/linkedin.svg" alt="logo de Linkedin "></a>
-        <a href=""><img src="./assets/image/" alt="Logo de Facebook"></a>
-    </div>
 
-    <section class="colaboraciones">
-        <p>¿Te gustaría colaborar juntos creando productos increibles?</p>
-        <input type="text">
-        <button type="button">¡Listo!</button>
+    <section class="colaborations">
+        <div class="container">
+            <p>¿Te gustaría colaborar juntos creando productos increibles?</p>
+            <input type="text" placeholder="Deja tu correo aquí...">
+            <button type="button">¡Listo!</button>
+        </div>
     </section>
 
     <main>
-        <section class="acercaMi" id="acercaMi">
-            <h2>Acerca de mí</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, obcaecati facere doloremque aspernatur, id quia quis culpa fuga, mollitia perspiciatis magnam nam repellendus minus laboriosam ipsa in molestiae quisquam odio?
-            Ducimus ad nobis accusamus adipisci ipsum. Excepturi porro placeat minus maxime, neque nemo nisi consequuntur cumque reprehenderit sint est asperiores doloribus accusamus accusantium omnis explicabo, perspiciatis officia pariatur magnam! Distinctio.
-            Omnis reiciendis quibusdam possimus necessitatibus tempora ab labore ex, incidunt officiis veritatis voluptatibus natus in nihil cumque delectus vel dignissimos. A qui nihil quam voluptatibus, temporibus ad dignissimos aspernatur fuga.</p>
-
-            <button type="button">↓ Download CV</button>
-                
-            <h2>Estudios</h2>
-            
-            <div>
-                <img src="./assets/image/logo-social.png" alt="Logo de la Corporación Universitaria del Huila">
-                <h3>Corhuila</h3>
-                <p>2016</p>
-                <p>Mercadeo y Publicidad</p>
-            </div>
-
-            <div>
-                <img src="./assets/image/logo_academlo.png" alt="Logo de Academlo">
-                <h3>Academlo</h3>
-                <p>2022</p>
-                <p>Programa full stack</p>
+        <section id="about">
+            <div class="container">
+                <h2>Acerca de mí</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, obcaecati facere doloremque aspernatur, id quia quis culpa fuga, mollitia perspiciatis magnam nam repellendus minus laboriosam ipsa in molestiae quisquam odio?
+                Ducimus ad nobis accusamus adipisci ipsum. Excepturi porro placeat minus maxime, neque nemo nisi consequuntur cumque reprehenderit sint est asperiores doloribus accusamus accusantium omnis explicabo, perspiciatis officia pariatur magnam! Distinctio.
+                Omnis reiciendis quibusdam possimus necessitatibus tempora ab labore ex, incidunt officiis veritatis voluptatibus natus in nihil cumque delectus vel dignissimos. A qui nihil quam voluptatibus, temporibus ad dignissimos aspernatur fuga.</p>
+    
+                <button type="button">↓ Download CV</button>
             </div>
         </section>
-        
-        <section class="habilidades">
+
+        <section id="study">
+            <div class="container">
+                <h2>Estudios</h2>
+                
+                <div>
+                    <h3>Corhuila</h3>
+                    <p>2016</p>
+                    <p>Mercadeo y Publicidad</p>
+                </div>
+            
+                <div>
+                    <h3>Academlo</h3>
+                    <p>2022</p>
+                    <p>Programa full stack</p>
+                </div>
+            </div>
+        </section>
+                            
+        <section id="skills">
+            <div class="container">
+                <h2>Mis habilidades</h2>
             <ul>
                 <li>Web design</li>
                 <span>80%</span>
@@ -109,22 +104,59 @@
                 <li>Frameworks</li>
                 <span>75%</span>
             </ul>
-        </section>
-
-        <section class="experiencia">
-            <div class="">
-                <p>Interactive</p>
-                <p>Design</p>
-                <p>1 año</p>
-            </div>
-
-            <div class="">
-                <p>Interactive</p>
-                <p>Design</p>
-                <p>1 año</p>
             </div>
         </section>
+
+        <section id="exp">
+            <div class="container">
+                <h2>Experiencia</h2>
+                <div>
+                    <p>Interactive</p>
+                    <p>Design</p>
+                    <p>1 año</p>
+                </div>
+                
+                <div>
+                    <p>Interactive</p>
+                    <p>Design</p>
+                    <p>1 año</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2>Mi portafolio</h2>
+                <div>
+                    <h3>UI design</h3>
+                </div>
+                <div>
+                    <h3>Web development</h3>
+                </div>
+            </div>
+        </section>
+
+        <section></section>
     </main>
 
+    <section id="contact">
+        <div class="container">
+            <div>
+                <h3>Número celular</h3>
+                <p>(+57) 315 722 7530</p>
+            </div>
+            <div>
+                <h3>E-mail</h3>
+                <p>jonsdesigned@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h3>Jon devsigned</h3>
+            <small>Hecho con ♥ en Academlo</small>
+        </div>
+    </footer>
 </body>
 </html>
