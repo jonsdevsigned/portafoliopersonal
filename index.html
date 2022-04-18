@@ -46,9 +46,15 @@
             </div>
 
             <section class="redes">
-                <img src="./assets/image/linkedin.svg" alt="logo Linkedin">
-                <img src="./assets/image/bxl-github.svg" alt="Logo Github">
-                <img src="./assets/image/bxl-facebook.svg" alt="Logo Facebook">
+                <a href="https://www.linkedin.com/in/jonsdevsigned/" target="_blank">
+                    <img src="./assets/image/linkedin.svg" alt="logo Linkedin">
+                </a>
+                <a href="https://github.com/jonsdevsigned" target="_blank">
+                    <img src="./assets/image/bxl-github.svg" alt="Logo Github">
+                </a>
+                <a href="https://facebook.com/jonsdevsigned" target="_blank">
+                    <img src="./assets/image/bxl-facebook.svg" alt="Logo Facebook">
+                </a>
             </section>
         </div>
     </header>
@@ -56,34 +62,35 @@
     <section class="colaborations">
         <div class="container">
             <p>¿Te gustaría colaborar juntos creando productos increibles?</p>
-            <input type="text" placeholder="Deja tu correo aquí...">
-            <button type="button">¡Listo!</button>
+            <div class="formulario">
+                <input type="text" placeholder="Deja tu correo aquí...">
+                <button type="button">¡Listo!</button>
+            </div>
         </div>
     </section>
 
     <main>
-        <section id="about">
+        <section class="about" id="about">
+            <h2>Acerca de mí</h2>
             <div class="container">
-                <h2>Acerca de mí</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, obcaecati facere doloremque aspernatur, id quia quis culpa fuga, mollitia perspiciatis magnam nam repellendus minus laboriosam ipsa in molestiae quisquam odio?
-                Ducimus ad nobis accusamus adipisci ipsum. Excepturi porro placeat minus maxime, neque nemo nisi consequuntur cumque reprehenderit sint est asperiores doloribus accusamus accusantium omnis explicabo, perspiciatis officia pariatur magnam! Distinctio.
-                Omnis reiciendis quibusdam possimus necessitatibus tempora ab labore ex, incidunt officiis veritatis voluptatibus natus in nihil cumque delectus vel dignissimos. A qui nihil quam voluptatibus, temporibus ad dignissimos aspernatur fuga.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, obcaecati facere doloremque aspernatur, id quia quis culpa fuga, mollitia perspiciatis magnam nam repellendus minus laboriosam ipsa in molestiae quisquam odio? Ducimus ad nobis accusamus adipisci ipsum. </p>
     
-                <button type="button">↓ Download CV</button>
+                <button type="button"><img src="./assets/image/arrow.svg" alt=""> Download CV</button>
             </div>
         </section>
 
-        <section id="study">
+        <section id="study" class="study">
+            <h2>Estudios</h2>
             <div class="container">
-                <h2>Estudios</h2>
-                
-                <div>
+                <div class="study-uno">
+                    <img src="./assets/image/logo-corhuila.png" alt="Logo Corhuila">
                     <h3>Corhuila</h3>
-                    <p>2016</p>
+                    <p>2015-2017</p>
                     <p>Mercadeo y Publicidad</p>
                 </div>
             
-                <div>
+                <div class="study-dos">
+                    <img src="./assets/image/logo_academlo.png" alt="">
                     <h3>Academlo</h3>
                     <p>2022</p>
                     <p>Programa full stack</p>
@@ -92,24 +99,24 @@
         </section>
                             
         <section id="skills">
+            <h2>Mis habilidades</h2>
             <div class="container">
-                <h2>Mis habilidades</h2>
             <ul>
-                <li>Web design</li>
-                <span>80%</span>
-                <li>Interaction design</li>
-                <span>95%</span>
-                <li>UX</li>
-                <span>80%</span>
-                <li>Frameworks</li>
-                <span>75%</span>
+                <li>Web design <span class="percent80">80%</span></li>
+                <div class="barra-skill"><div class="barra-progreso1"></div></div>
+                <li>Interaction design <span class="percent95">95%</span></li>
+                <div class="barra-skill"><div class="barra-progreso2"></div></div>
+                <li>UX <span class="percent80">80%</span></li>
+                <div class="barra-skill"><div class="barra-progreso1"></div></div>
+                <li>Frameworks <span class="percent75">75%</span></li>
+                <div class="barra-skill"><div class="barra-progreso3"></div></div>
             </ul>
             </div>
         </section>
 
         <section id="exp">
+            <h2>Experiencia</h2>
             <div class="container">
-                <h2>Experiencia</h2>
                 <div>
                     <p>Interactive</p>
                     <p>Design</p>
@@ -125,8 +132,8 @@
         </section>
 
         <section id="portfolio">
+            <h2>Mi portafolio</h2>
             <div class="container">
-                <h2>Mi portafolio</h2>
                 <div>
                     <h3>UI design</h3>
                 </div>

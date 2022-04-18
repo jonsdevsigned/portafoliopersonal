@@ -6,10 +6,17 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    color: rgb(55, 55, 55);
+    background-color: rgb(253, 253, 253);
 }
 
 h1{ font-size: 3em;}
-h2{ font-size: 2.1em; }
+
+h2{ 
+    font-size: 2.1em;
+    padding: 30px 0 0 8px;
+ }
+
 h3{ font-size: 1.2em; }
 p{ font-size: 1em; }
 ul, ol{ list-style: none; }
@@ -32,10 +39,23 @@ button:hover{
     background-color: #125E44;
 }
 
+a{ 
+    text-decoration: none;
+    color: #FFF;
+    padding: .35rem;
+}
+
+a:hover{
+    color: #ef9919;
+}
+
 .container{
-    max-width: 90vw;
+    max-width: 80vw;
     margin: auto;
 }
+
+
+/* Estilar el input del menu hamburguesa */
 
 nav{
     background-color: #197F5B;
@@ -47,16 +67,6 @@ nav{
     top: .8rem;
     right: 2rem;
 } 
-
-a{ 
-    text-decoration: none;
-    color: #FFF;
-    padding: .35rem;
-}
-
-a:hover{
-    color: #ef9919;
-}
 
 input#menu-hamburgesa{
     visibility: hidden;
@@ -80,6 +90,9 @@ input#menu-hamburgesa ~ ol{
 input#menu-hamburgesa:checked ~ ol{
     right: 0;
 }
+
+
+/* Estilar el header */
 
 header .container{
     display: flex;
@@ -147,10 +160,12 @@ header .redes{
     margin-top:150px;
 }
 
-header .redes *{
+header .redes img{
+    width: 45px;
     padding: 6px;   
     background-color: #FFF;
-    border-radius: 20px;
+    border-radius: 24px;
+    /* border: 1px solid black; */
 }
 
 /* header .redes > *:nth-child(odd){
@@ -160,6 +175,9 @@ header .redes *{
 header .redes > *:nth-child(2){
     border: 1px solid red;
 } */
+
+
+/* Estilar el formulario de colaborations */
 
 .colaborations{
     text-align: center;
@@ -178,74 +196,134 @@ input{
     background-color: #ede4db;
     border-radius: 20px;
     height: 40px;
-    width: 80vmin
-    
+    width: 400px;
+    outline: none;
 }
 
-input:checked{
-    border: 0;
+.formulario{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
 }
 
-.colaborations button{
+.formulario button{
     position: absolute;
-    
+
 }
 
+[placeholder]{
+    padding: 0 15px;
+}
 
+.about .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 0;
+}
 
-
-
-
-/*.title-head > * { */
-    /* border: 1px solid black; */
-/*     display: flex;
+.about button{
+    display: flex;
+    align-items: center;
     justify-content: center;
-    width: 100%;
-    position: absolute;
-    top: 7.2rem;
+    width: 190px;
+}
+
+.about p{
+    padding-bottom: 20px;
+}
+
+.study .container {
+    display: flex;
+    text-align: center;
+}
+
+.study .study-uno{
+    padding: 15px 0;
+    margin: 8px;
+    border-radius: 20px;
+    background-color:#f9f5f2;
+    width: 50vw;
+}
+
+.study .study-dos{
+    padding: 15px 0;
+    margin: 8px;
+    border-radius: 20px;
+    background-color:#f9f5f2;
+    width: 50vw;
+}
+
+.study .container p:nth-child(3){
+    font-size: .85rem;
+}
+
+.study .study-uno img{
+    width: 80px;
+    padding: 16px 0;
+}
+
+.study {
+    text-align: center;
+}
+
+#skills{
+    text-align: center;
+}
+
+#skills .container{
+    text-align: left;
     font-weight: bold;
-    font-size: 32px;
-    color: #ef9919;
+    padding-top: 22px; 
 }
 
-.title-head > ul > li:nth-of-type(1){ */
-    /* border: 1px solid black; */
-   /*  color: #fff;
-    padding: 0 .3rem 0 0;
-    font-weight: normal;
+#skills span{
+    font-size: .7em;
+    color:#125E44
 }
 
-header > p { */
-    /* border: 1px solid black; */
-    /* position: absolute;
-    top: 10.3rem;
-    width: 100%;
+#skills .barra-skill{
+    height: 16px;
+    border-radius: 10px;
+    background-color:#ede4db;
+    margin: 7px 0 20px 0;
+}
+
+#skills .barra-progreso1{
+    height: 16px;
+    border-radius: 10px;
+    background-color:#197F5B;
+    width: 80%;
+}
+
+#skills .barra-progreso2{
+    height: 16px;
+    border-radius: 10px;
+    background-color:#197F5B;
+    width: 95%;
+}
+
+#skills .barra-progreso3{
+    height: 16px;
+    border-radius: 10px;
+    background-color:#197F5B;
+    width: 75%;
+}
+
+#exp{
+    background-color:#f9f5f2;
     text-align: center;
-    color: #fff;
-    padding: 0 .8rem;
-    font-size:large;
 }
 
-.info-exp > *{
-    position: absolute; */
-    /* border: 1px solid black; */
-    /* background-color: #fff;
-    top: 15rem;
-    left: .6rem;
-    border-radius: 2rem;
-    box-shadow: 0 .3rem 15px rgb(146, 175, 156);
-    font-size: 12px;
-    width: 6.5rem;
-    text-align: center;
-    padding: .2rem .5rem;
+#exp .container{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
 }
 
-.info-exp > ul:nth-of-type(1){
-    top: 22rem;
-    left: 10rem;
-    padding: 0;
+#exp .container > div{
+    border: 1px solid black
+    
 }
-
-.info-exp > ul > li:nth-of-type(2){
-    color: #ef9919;
-} */
