@@ -317,13 +317,24 @@ input{
 }
 
 #exp .container{
-    border: 1px solid black;
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 30px;
 }
 
 #exp .container > div{
-    border: 1px solid black
+    margin: 0 15px;
+}
+
+#exp .container > div > p:last-child{
+    font-size: .9em;
+    font-weight: bold;
     
+}
+
+#exp .container > div > span{
+    color: blueviolet;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 5.7em;
+    font-weight: bolder;
 }
