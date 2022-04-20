@@ -230,6 +230,10 @@ input{
     width: 190px;
 }
 
+.about img{
+
+}
+
 .about p{
     padding-bottom: 20px;
 }
@@ -337,4 +341,18 @@ input{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     font-size: 5.7em;
     font-weight: bolder;
+}
+
+
+
+
+
+
+footer{
+    background-color: #197F5B;
+}
+
+footer div *{
+    color:#FFF;
+    text-align: center;
 }
