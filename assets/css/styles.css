@@ -99,87 +99,120 @@ input#menu-hamburgesa:checked ~ ol{
 
 /* Estilar el header */
 
+header{
+    display: flex;
+    justify-content: center;
+}
+
 header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #197F5B;
-    height: 80vh;
+    height: 85vh;
 }
 
-header .container h1{
+.title{
+    position: absolute;
+    top: 5vh;
+}
+
+header h1{
     color: #ef9919;
     font-size: 2em;
-    top: 20px;
+    top: 100px;
     padding-top: 50px;
+    width: 90vw;
     
 }
 
 header h1 span{
     font-weight:lighter;
-    color: #FFF
+    color: rgb(253, 253, 253);
 }
 
 header > div > p{
-    color: #FFF;
-    padding-bottom: 20px;
+    width: 92vw;
+    color: rgb(253, 253, 253);
+    position: absolute;
+    top: 132px;
 }
 
 .info-exp{
+    position: absolute;
     display: flex;
     flex-direction: row;
-    width: 306px;
     justify-content: space-between;
+    top: 250px;
+    left: 15px;
+    width: 440px;
+    height: 200px;
 }
 
-
-header .info-exp p{
+.info-exp p{
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #FFF;
-    border-radius: 25px;
+    border-radius: 30px;
     padding: 2.5px 17px;
-    font-size: .7em;
-    width: 109px;
+    font-size: .8em;
+    width: 120px;
+    height: 55px;
 }
 
-header .info-exp p:first-child{
-    margin-top: 30px 0;
+.info-exp p:last-child{
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
-header .info-exp p span{
+.info-exp p span{
     color: #ef9919;
 }
 
-header .info-exp p:first-child{
+.info-exp p:first-child{
     left: 2px;
 }
 
-header .redes{
+.redes{
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 210px;
+    width: 300px;
     margin-top:150px;
+    height: 100px;
+    top: 400px;
 }
 
-header .redes img{
-    width: 45px;
-    padding: 6px;   
-    background-color: #FFF;
+.redes img{
+    width: 50px;
+    padding: 7px;   
+    background-color: rgb(253, 253, 253);
     border-radius: 24px;
-    /* border: 1px solid black; */
+    
 }
 
-/* header .redes > *:nth-child(odd){
-    border: 1px solid black;
+.redes a:nth-of-type(2){
+    position: absolute;
+    bottom: 0;
+    left: 125px;
 }
 
-header .redes > *:nth-child(2){
-    border: 1px solid red;
-} */
+header > img:nth-child(1){
+    position: absolute;
+    width: 53.8vw;
+    top: 34.5vh;   
+}
+
+header > img:nth-child(2){
+    top: 8px;
+    position: absolute;
+    z-index: -1;
+    width: 96.3vw;
+    max-width: 500px;
+}
 
 
 /* Estilar el formulario de colaborations */
@@ -190,10 +223,11 @@ header .redes > *:nth-child(2){
     padding: 15px;
     margin: 0 15px;
     font-size: 1.2em;
+
 }
 
 .colaborations p{
-    padding-bottom: 7px;
+    padding-bottom: 10px;
 }
 
 input{
@@ -214,12 +248,16 @@ input{
 
 .formulario button{
     position: absolute;
+    left: calc(400px - 103px)
 
 }
 
 [placeholder]{
     padding: 0 15px;
 }
+
+
+/* Estilar el Acerca de mí */
 
 .about .container{
     display: flex;
@@ -228,16 +266,24 @@ input{
     padding: 5px 0;
 }
 
+.about h2{
+    padding-bottom: 15px;
+}
+
 .about button{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 190px;
+    height: 45px;
 }
 
 .about p{
-    padding-bottom: 20px;
+    padding-bottom: 35px;
 }
+
+
+/* Estilar Estudios */
 
 .study .container {
     display: flex;
@@ -273,6 +319,9 @@ input{
     text-align: center;
 }
 
+
+/* Estilar Mis habilidades */
+
 #skills{
     text-align: center;
 }
@@ -299,22 +348,25 @@ input{
     height: 16px;
     border-radius: 10px;
     background-color:#197F5B;
-    width: 80%;
+    width: 30%;
 }
 
 #skills .barra-progreso2{
     height: 16px;
     border-radius: 10px;
     background-color:#197F5B;
-    width: 95%;
+    width: 0%;
 }
 
 #skills .barra-progreso3{
     height: 16px;
     border-radius: 10px;
     background-color:#197F5B;
-    width: 75%;
+    width: 0;
 }
+
+
+/* Estilar Experiencia */
 
 #exp{
     background-color:#f9f5f2;
@@ -343,6 +395,9 @@ input{
     font-size: 5.7em;
     font-weight: bolder;
 }
+
+
+/* Estilar Mi Portafolio */
 
 #portfolio{
     text-align: center;
@@ -373,6 +428,9 @@ input{
 .img-portafolio img:nth-child(3){
     width: 40vw
 }
+
+
+/* Estilar Contacto */
 
 #contact{
     text-align: center;
@@ -410,6 +468,9 @@ input{
     border-radius: 32px;
     padding: 15px;
 }
+
+
+/* Estilar footer */
 
 footer{
     background-color: #197F5B;
