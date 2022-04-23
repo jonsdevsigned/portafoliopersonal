@@ -109,12 +109,6 @@ header .container{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 85vh;
-}
-
-.title{
-    position: absolute;
-    top: 5vh;
 }
 
 header h1{
@@ -122,7 +116,6 @@ header h1{
     font-size: 2em;
     top: 100px;
     padding-top: 50px;
-    width: 90vw;
     
 }
 
@@ -132,21 +125,19 @@ header h1 span{
 }
 
 header > div > p{
-    width: 92vw;
+    font-size: 1.3em;
     color: rgb(253, 253, 253);
-    position: absolute;
-    top: 132px;
 }
 
 .info-exp{
-    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    top: 250px;
     left: 15px;
-    width: 440px;
+    max-width: 500px;
+    width: 400px;
     height: 200px;
+    margin: 50px 0;
 }
 
 .info-exp p{
@@ -161,11 +152,11 @@ header > div > p{
     height: 55px;
 }
 
-.info-exp p:last-child{
+/* .info-exp p:last-child{
     position: absolute;
     right: 0;
     bottom: 0;
-}
+} */
 
 .info-exp p span{
     color: #ef9919;
@@ -176,14 +167,11 @@ header > div > p{
 }
 
 .redes{
-    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 300px;
-    margin-top:150px;
-    height: 100px;
-    top: 400px;
+    margin-top: 130px;
 }
 
 .redes img{
@@ -194,23 +182,26 @@ header > div > p{
     
 }
 
-.redes a:nth-of-type(2){
+/* .redes a:nth-of-type(2){
     position: absolute;
     bottom: 0;
     left: 125px;
-}
+} */
 
 header > img:nth-child(1){
     position: absolute;
-    width: 53.8vw;
-    top: 34.5vh;   
+    width: 54%;
+    top:42%;
+    bottom: 0;
+    max-width: 260px;
+    min-width: 100px;
 }
 
 header > img:nth-child(2){
     top: 8px;
     position: absolute;
     z-index: -1;
-    width: 96.3vw;
+    width: 100%;
     max-width: 500px;
 }
 
