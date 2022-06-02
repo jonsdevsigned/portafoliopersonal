@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 
     <!-- Link Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <title>Portafolio Jonfo</title>
+    <!-- Link Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio jonsdevsigned</title>
 </head>
 
 <body>
@@ -30,157 +30,132 @@
             <a href="#contact"><li>Contacto</li></a>
         </ol>
     </nav>
-
+    
     <header id="home">
-        <img src="./assets/image/mobile.png" alt="Background Home">
+
+        <img class='home-mobile'src="./assets/image/mobile.png" alt="Background Home">
+        <!-- <img class='home-desktop'src="./assets/image/desktop.png" alt="Background Home"> -->
         
-        <div class="container">
-            <div class="title">
-                <h1><span>Soy</span> John Forero</h1>
-            </div> 
-            <p>Creo, diseño y desarrollo para darle el valor a tu producto</p>
+        <h1><span>Soy</span> John Forero</h1>
+        <h2>Creo, diseño y desarrollo para darle el valor a tu producto.</h2>
+        
+        <article class="bannerExpDesign">
+            <h3>Graphic Designer</h3>
+            <p>+5 años</p>
+        </article>
+
+        <article class="bannerExpFronted">
+            <h3>Frontend Dev</h3>
+            <p>1 mes</p>
+        </article> 
+        
+        <img class="imgProfile" src="./assets/image/foto.png" alt="Foto Personal">
             
-            <div class="info-exp">
-                <p>UI Designer <span>4 años</span></p>
-                <p>Frontend Dev <span>1 año</span></p>
-            </div>
-            
-            <div class="foto-portada">
-                <img src="./assets/image/foto.png" alt="Foto Personal">
-            </div>
-            
-            <section class="redes">
-                <a href="https://www.linkedin.com/in/jonsdevsigned/" target="_blank">
-                    <img src="./assets/image/linkedin.svg" alt="logo Linkedin">
-                </a>
-                <a href="https://github.com/jonsdevsigned" target="_blank">
-                    <img src="./assets/image/bxl-github.svg" alt="Logo Github">
-                </a>
-                <a href="https://facebook.com/jonsdevsigned" target="_blank">
-                    <img src="./assets/image/bxl-facebook.svg" alt="Logo Facebook">
-                </a>
-                
-            </section>
-        </div>
+        <section class="networks">
+            <a href="https://www.linkedin.com/in/jonsdevsigned/" target="_blank">
+                <i class="fa-brands fa-linkedin" alt="Logo Linkedin"></i>
+            </a>
+            <a href="https://github.com/jonsdevsigned" target="_blank">
+                <i class="fa-brands fa-github" alt="Logo Github"></i>
+            </a>
+            <a href="https://facebook.com/jonsdevsigned" target="_blank">
+                <i class="fa-brands fa-facebook" alt="Logo Facebook"></i>
+            </a>
+        </section>    
     </header>
 
-    <section class="colaborations">
-        <div class="container">
-            <p>¿Te gustaría colaborar juntos creando productos increibles?</p>
-            <div class="formulario">
-                <input type="text" placeholder="Deja tu correo aquí...">
-                <button type="button">¡Listo!</button>
-            </div>
+    <article class="teamwork">
+        <h2>¿Te gustaría colaborar juntos creando productos increíbles?</h2>
+        <div class="form">
+            <input type="text" placeholder="Deja tu correo aquí...">
+            <button type="button">¡Listo!</button>
         </div>
-    </section>
+    </article>
 
     <main>
-        <section class="about" id="about">
-            <div class="container">
-                <h2>Acerca de mí</h2>
-                <p>Soy Comunicador Gráfico con más de 6 años de experiencia. Dentro de mi trabajo como diseñador he desarrollado proyectos en papelería comercial, también he creado logos, he maquetado libros, y diseñado para exterior: como pendones y avisos publicitarios. Tengo conocimientos en Impresión Digital e Impresión Litográfica. Trabajo sobre plataforma Windows o Mac. Conozco el manejo de redes sociales y tengo bases en lenguajes informáticos: HTML, CSS y Javascript.</p>
+        <section id="about">
+            <h2>Acerca de mí</h2>
+            <p>Soy Comunicador Gráfico con más de 5 años de experiencia. Dentro de mi trabajo como diseñador he desarrollado proyectos en papelería comercial, también he creado logos, he maquetado libros, y diseñado para exterior: como pendones y avisos publicitarios. Tengo conocimientos en Impresión Digital e Impresión Litográfica. Trabajo sobre plataforma Windows o Mac. Conozco el manejo de redes sociales y tengo bases en lenguajes informáticos: HTML, CSS y Javascript.</p>
     
-                <button type="button"><img src="./assets/image/arrow.svg" alt=""> Download CV</button>
-            </div>
+            <button type="button"><i class="fa-solid fa-arrow-down"></i> Download CV</button>
         </section>
 
-        <section id="study" class="study">
+        <section id="study">
             <h2>Estudios</h2>
-            <div class="container">
-                <div class="study-uno">
-                    <img src="./assets/image/logo-corhuila.png" alt="Logo Corhuila">
-                    <h3>Corhuila</h3>
-                    <p>2015-2017</p>
-                    <p>Mercadeo y Publicidad</p>
-                </div>
+            <article class="first-study">
+                <img src="./assets/image/logo-corhuila.png" alt="Logo Corhuila">
+                <h3>Corhuila</h3>
+                <p>2015-2017</p>
+                <p>Mercadeo y Publicidad</p>
+            </article>
             
-                <div class="study-dos">
-                    <img src="./assets/image/logo_academlo.png" alt="">
-                    <h3>Academlo</h3>
-                    <p>2022</p>
-                    <p>Programa full stack</p>
-                </div>
-            </div>
+            <article>
+                <img src="./assets/image/logo_academlo.png" alt="Logo Academlo">
+                <h3>Academlo</h3>
+                <p>2022</p>
+                <p>Programa full stack</p>
+            </article>
         </section>
                             
         <section id="skills">
             <h2>Mis habilidades</h2>
-            <div class="container">
             <ul>
-                <li>Web design <span>30%</span></li>
-                <div class="barra-skill"><div class="barra-progreso1"></div></div>
-                <li>Interaction design <span class="percent95">0%</span></li>
-                <div class="barra-skill"><div class="barra-progreso2"></div></div>
+                <li>Web design <span class="percentWeb">30%</span></li>
+                <li>Interaction design <span>0%</span></li>
                 <li>UX <span>0%</span></li>
-                <div class="barra-skill"><div class="barra-progreso3"></div></div>
-                <li>Frameworks <span class="percent75">0%</span></li>
-                <div class="barra-skill"><div class="barra-progreso3"></div></div>
+                <li>Frameworks <span class="percentFrame">0%</span></li>
             </ul>
-            </div>
         </section>
 
         <section id="exp">
             <h2>Experiencia</h2>
-            <div class="container">
-                <div>
-                    <img src="./assets/image/Wizeline.png" alt="">
-                    <p>Interactive</p>
-                    <p>Design</p>
-                    <p>1 año</p>
-                </div>
+            <button class="angleLeft">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+            <article class="expFirst">
+                <img src="./assets/image/Wizeline.png" alt="">
+                <h3>Interactive <br>Design</h3>
+                <p>1 año</p>
+            </article>
                 
-                <div>
-                    <span>></span>
-                    <p>Interactive</p>
-                    <p>Design</p>
-                    <p>1 año</p>
-                </div>
-            </div>
+            <article class="expSecond">
+                <h3>Interactive <br>Design</h3>
+                <p>1 año</p>
+            </article>
+            <button>
+                <i class="fa-solid fa-angle-right"></i>
+            </button>
         </section>
 
         <section id="portfolio">
             <h2>Mi portafolio</h2>
-            <div class="container">
-                <div>
-                    <a href="#"><h3>UI design</h3></a>
-                </div>
-                <div>
-                    <a href="#"><h3>Web development</h3></a>
-                </div>
-            </div>
-            <div class="img-portafolio">
-                <img src="./assets/image/Ejemplo2.png" alt="Portafolio Imagen 1">
-                <img src="./assets/image/Ejemplo 1.png" alt="Portafolio Imagen 2">
-                <img src="./assets/image/Ejemplo 4.png" alt="Portafolio Imagen 3">
-                <img src="./assets/image/Ejemplo 3.png" alt="Portafolio Imagen 4">
-            </div>
+            <a class="titleDesign" href="#"><h3>UI design</h3></a>
+            <a  class="titleDev" href="#"><h3>Web development</h3></a>
+            <img src="./assets/image/Ejemplo2.png" alt="Portafolio Imagen 1">
+            <img src="./assets/image/Ejemplo 1.png" alt="Portafolio Imagen 2">
+            <img src="./assets/image/Ejemplo 4.png" alt="Portafolio Imagen 3">
+            <img src="./assets/image/Ejemplo 3.png" alt="Portafolio Imagen 4">
         </section>
-
-    </main>
-
-    <section id="contact">
-        <h2>Contacto</h2>
-        <div class="container">
-            <a href="tel:+573157227530"><div>
-                <img src="./assets/image/phone.svg" alt="Imagen de un icono de teléfono">
+        
+        <section id="contact">
+            <h2>Contacto</h2>
+            <article>
+                <a href="tel:+573157227530"><i class="fa-solid fa-phone"></i></a>
                 <h3>Número celular</h3>
                 <p>(+57) 315 722 7530</p>
-            </div></a>
-            <div>
-                <a href="mailto:jonsdesigned@gmail.com">
-                    <img src="./assets/image/mail.svg" alt="Imagen de un icono de correo">
-                    <h3>Email</h3>
-                    <p>jonsdesigned@gmail.com</p>
-                </a>
-            </div>
-        </div>
-    </section>
+            </article>
+            
+            <article>
+                <a href="mailto:jonsdesigned@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <h3>Email</h3>
+                <p>jonsdesigned@gmail.com</p>
+            </article>
+        </section>
+    </main>        
 
     <footer>
-        <div class="container">
-            <h3>Jon devsigned</h3>
-            <p>Hecho con ♥ en Academlo</p>
-        </div>
+        <h2>Jon devsigned</h2>
+        <p>Hecho con ♥ en Academlo</p>
     </footer>
 </body>
 </html>
