@@ -102,7 +102,7 @@ header{
 }
 
 .home-mobile{
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
 }
 
@@ -547,11 +547,11 @@ img[alt="Portafolio Imagen 4"]{
 }
 
 #contact article:nth-child(2){
-    justify-self: start;
+    justify-self: center;
 }
 
 #contact article:nth-child(3){
-    justify-self: end;
+    justify-self: center;
 }
 
 #contact a{
